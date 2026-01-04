@@ -9,9 +9,33 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.textContent = "🌙";
   }
 });
-function openNav() {
-  document.getElementById("sideNav").style.width = "250px";
+function openChat() {
+  document.getElementById("chatbot").style.display = "block";
+  document.querySelector(".chat-icon").style.display = "none";
 }
-function closeNav() {
-  document.getElementById("sideNav").style.width = "0";
+
+function closeChat() {
+  document.getElementById("chatbot").style.display = "none";
+  document.querySelector(".chat-icon").style.display = "flex";
+}
+
+function addBotMessage(text) {
+  const chat = document.getElementById("chatBody");
+  const msg = document.createElement("div");
+  msg.className = "bot-message";
+  msg.innerHTML = text;
+  chat.appendChild(msg);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function getCode() {
+  addBotMessage(
+    "💬To make an enquiry, please contact us via our official social media handles."
+  );
+}
+
+function register() {
+  addBotMessage(
+    "📝 Send Us a message ,and we'll respond as soon as possible."
+  );
 }
