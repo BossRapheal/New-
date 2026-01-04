@@ -17,36 +17,41 @@
             <img src="image2.jpg" alt="Logo" class="logo-img">
             <p><span style="color: #00aaff;">RaphX</span>Soln</p>
         </div>
-<div class="notification">
-  <i class="fa fa-bars icon" style="font-size: 30px;" class="openbtn" onclick="openNav()"></i>
-</div>
-<div id="sideNav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-  <a href="#about"><i class="fa fa-user" aria-hidden="true"></i> About</a>
-  <a href="#blog"><i class="fa-solid fa-code" aria-hidden="true"></i> Skills</a>
-  <a href=""><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Projects</a>
-  <a href="#footer"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
-  </div>
-    </header>
+        </header>
+      
     
 
 
 <button id="theme-toggle"  class="theme">
     🌙 
 </button>
-
-    <a href="" class="chat-icon">
-        <i class="fa-solid fa-comment"></i>
-    </a>
 </body>
+<div class="chat-icon" onclick="openChat()">
+  <i class="fa-solid fa-comment"></i>
+</div>
+<div id="chatbot">
+  <div class="chat-header">
+    Assistant
+    <span onclick="closeChat()">✖</span>
+  </div>
+
+
+  <div class="chat-body" id="chatBody">
+    <div class="bot-message">
+      Hello 👋 how can I help you?<br><br>
+      <button onclick="getCode()">Make an enquriy </button>
+      <button onclick="register()">Need assistance</button>
+    </div>
+  </div>
+</div>
+
   <footer>
     <div class="footer-content" id="footer">
       <ul class="footer-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#blog">News & Blogs</a></li>
-        <li><a href="#footer" id="contact-link">Contact</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="" id="contact-link">Contact</a></li>
       </ul>
       <div class="social-links">
         <a href="" target="_blank" class="fa-brands fa-facebook-f"></a>
@@ -56,7 +61,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 RaphXSoln. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+      <p>&copy; 2025 RaphXSoln. All Rights Reserved. | <a href="">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
     </div>
   </footer>
 
