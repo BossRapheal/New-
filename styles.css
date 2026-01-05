@@ -253,6 +253,7 @@ body {
 
 .menu-wrapper {
   position: relative;
+    margin-right:20px;
 }
 .menu-btn {
   display: flex;
@@ -313,3 +314,4 @@ body.dark-mode .header {
 body.dark-mode .menu-btn .line {
   background: #fff;
 }
+
