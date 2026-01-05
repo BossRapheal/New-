@@ -39,3 +39,15 @@ function register() {
     "📝 Send Us a message ,and we'll respond as soon as possible."
   );
 }
+  const menuBtn = document.getElementById("menuBtn");
+  const menuOverlay = document.getElementById("menuOverlay");
+
+  menuBtn.addEventListener("click", () => {
+    menuOverlay.classList.toggle("open");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!menuBtn.contains(e.target) && !menuOverlay.contains(e.target)) {
+      menuOverlay.classList.remove("open");
+    }
+  });
